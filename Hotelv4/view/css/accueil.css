@@ -1,0 +1,108 @@
+/*1er SECTION*/
+#bienvenue{
+    background-image: url(../img/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    padding: 130px 0;
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.centrer{
+    align-items: center;
+    padding: 35px 0;
+    text-align: center;
+}
+.cta{
+    color:#fff;
+    font-size:20px;
+    border-radius: 5%;
+    padding: 5px;
+}
+.cta:hover{
+    color:#fff;
+    font-weight: bold;
+    background: transparent;
+    background: -moz-linear-gradient(top, transparent 10%, #207cca 31%, #207cca 51%, #2989d8 66%, transparent 82%);
+    background: -webkit-linear-gradient(top, transparent 10%,#207cca 31%,#207cca 51%,#2989d8 66%,transparent 82%);
+    background: linear-gradient(to bottom, transparent 10%,#207cca 31%,#207cca 51%,#2989d8 66%,transparent 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='transparent',GradientType=0 );
+}
+
+/*2eme SECTION*/
+#presentation{
+   margin:20px auto;
+   max-width: 90%;  
+}
+#presentation img{
+    -webkit-box-shadow: -1px -1px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 23px 0px rgba(0,0,0,0.75);
+}
+
+.service{
+    display: flex;
+    margin-bottom: 20px;
+}
+.imgrelaxation{
+
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+} 
+
+.imgrelaxation:hover{
+       cursor: pointer;
+       opacity: 0.7; 
+}
+
+ .pont{
+    width: 100%;
+}
+
+.imgmap{
+    max-width: 100%;
+}
+
+/* Passage max 767px */
+@media screen and (max-width: 767px) {
+    
+    #accueil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bienvenue{
+
+        display:flex;
+        justify-content: center;
+        background-attachment: initial;
+    }
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgrelaxation{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+}
+/* Passage max 450px */
+@media screen and (max-width: 450px) {
+    .service{
+        font-size: 15px;
+    }
+
+    
+
+}
+
+
+
+

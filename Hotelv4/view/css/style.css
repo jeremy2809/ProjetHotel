@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	transition: all .2s ease 0s;
+    /* Visualisation des éléments */
+    /*border: 1px dotted rgba(0,0,0,0.3);*/
+}
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Slabo 27px', serif;
+    color:grey;
+    text-decoration: none;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.container label{
+   display:flex;
+   flex-direction: column;
+}
+
+.alert{
+font-size: 20px;
+color:white;
+line-height: 1;
+background-color: #73b5ca;
+text-align: center;
+letter-spacing: 2px;
+}
+
+span{
+    font-weight: bold;
+    color:#73b5ca;
+}
+strong{
+    letter-spacing: 10px;
+    border-bottom: 2px solid black;
+}
+
+h1,h2,legend,input,.confirme,.confirme button {
+    font-family: 'Comfortaa', cursive;
+}
+
+h1,h2,legend{
+    letter-spacing: 3px;
+}
+
+h1{
+    font-size:30px;  
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 300;  
+}
+
+.alignctr{
+    text-align: center;
+    margin:0 auto;
+}
+
+input{
+    opacity:0.7;
+}
+
+label{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+#logo{
+    width: 140px;
+}
+
+
+/* ANIMATION gauche->droite */
+.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+    .cool-link {
+        display: inline-block;
+        color:grey;
+        text-decoration: none;
+      }
+      
+      .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #000;
+        transition: width .3s;
+      }
+      
+      .cool-link:hover::after {
+        width: 100%;
+        transition: width .3s;
+        
+      }
+      .cool-link:hover{
+          color:black;
+      }
+
+      .fade.in {
+        opacity: 1;
+    }
+
+
+    .alert {
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+   
+
+
+

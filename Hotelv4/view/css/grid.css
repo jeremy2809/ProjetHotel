@@ -1,0 +1,36 @@
+
+.container_grid>div{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+  color: #ffeead;
+}
+.container_grid>div>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container_grid{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+	grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    max-width: 90%;
+    margin: 50px auto;
+	
+}
+.horizontal{
+	grid-column: span 2
+	
+}
+.big{
+	grid-column: span 2;
+	grid-row: span 2;
+	
+}
+.vertical{
+	grid-row: span 2;
+	
+}
